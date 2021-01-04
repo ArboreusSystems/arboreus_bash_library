@@ -24,7 +24,6 @@ A_DIR_HANDLERS="${A_PREBUILT_LIBS_ROOT}/Handlers";
 A_CXXFLAG_STD="-std=c++11";
 A_CXXFLAG_STDLIB="-stdlib=libc++";
 A_IPHONE_MIN="11.0";
-A_ANDROID_NDK_ROOT="/Users/alexandr/Tools/android/sdk/ndk/21.3.6528147";
 A_ANDROID_API="21";
 A_CORE_NUMBER=$(getconf _NPROCESSORS_ONLN);
 
