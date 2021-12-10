@@ -8,7 +8,7 @@ export A_ANDROID_NDK_ROOT="/path/to/android/ndk/root";
 ```
 
 All scripts and library builds tested on:
-* MacOS Mojave 10.14.6
-* XCode 11.3.1
+* MacOS Catalina 10.15.7
+* Xcode 12.4
 * Android NDK 21.3.6528147
-* Qt 5.15.2
+* Qt 5.15.7

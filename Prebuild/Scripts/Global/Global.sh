@@ -116,8 +116,8 @@ ICU_PREFIX_ANDROID_X86_64="${ICU_PREFIX_ANDROID}/x86_64";
 # -----------------------------------
 # Boost variables
 
-BOOST_VERSION="1.62.0";
-BOOST_VERSION_STRING="1_62_0";
+BOOST_VERSION="1.78.0";
+BOOST_VERSION_STRING="1_78_0";
 BOOST_VERSION_NAME="boost_${BOOST_VERSION_STRING}"
 BOOST_DIR_SCRIPTS="${A_DIR_SCRIPTS}/Boost";
 BOOST_DIR_BUILDS="${A_DIR_BUILDS}/Boost";
@@ -130,10 +130,16 @@ BOOST_LOAD_URL="http://sourceforge.net/projects/boost/files/boost/${BOOST_VERSIO
 BOOST_BUILD_MODE="install";
 #BOOST_BUILD_MODE="stage";
 #BOOST_LIBRARIES=("log");
-BOOST_LIBRARIES=( \
-	"atomic" "chrono" "date_time" "filesystem" "iostreams" "locale" \
-	"log" "program_options" "regex" "system" "test" "thread" \
-);
+# ---------------------------------
+# Boost Asio requirements
+BOOST_LIBRARIES=("system" "thread" "date_time" "regex" "serialization");
+
+# ---------------------------------
+# Bosst for libbitcoin
+#BOOST_LIBRARIES=( \
+#	"atomic" "chrono" "date_time" "filesystem" "iostreams" "locale" \
+#	"log" "program_options" "regex" "system" "test" "thread" \
+#);
 
 BOOST_PREFIX_MACOS="${BOOST_DIR_BUILDS}/macos";
 
